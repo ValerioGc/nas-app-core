@@ -1,0 +1,15 @@
+[package]
+name = "nas-app-core"
+version = "0.1.0"
+edition = "2021"
+description = "Socket bootstrap shared by the backends of the NAS applications"
+license = "UNLICENSED"
+publish = false
+autotests = false
+
+[dependencies]
+axum = "0.8.9"
+tokio = { version = "1.54.1", features = ["fs", "net"] }
+
+[dev-dependencies]
+tokio = { version = "1.54.1", features = ["fs", "macros", "net", "rt-multi-thread"] }
